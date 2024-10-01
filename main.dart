@@ -64,7 +64,7 @@ class Game{
     while(true){
       stdout.write("Guess The Letter:");
       String guessedLetter = stdin.readLineSync()!;
-      if (guessedLetter.length == 1 && guessedLetter.contains(RegExp("[a-z]"))){
+      if (guessedLetter.length == 1 && guessedLetter.toLowerCase().contains(RegExp("[a-z]"))){
         return guessedLetter.toLowerCase();
       }
       print("Value error\nPlease enter a valid value.");
