@@ -1,3 +1,4 @@
+
 import "dart:math";
 import "dart:io";
 void main(){
@@ -41,7 +42,8 @@ class Game{
           dashes[i] = Letter;
           correctGuesses+=1;
           if(word.join() == dashes.join()){
-            print("won");
+            print("You won!!!");
+            print("The word is : " + word.join(''));
             finished = true;
           } 
         }
